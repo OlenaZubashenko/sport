@@ -48,11 +48,16 @@ body {
     font-weight: 500;
     text-decoration: none;
     letter-spacing: 1px;
+    transition: .3s;
 }
 
 .nav-link:hover {
     color: #f87007;
-    transition: .3s;
+    
+}
+
+.uk {
+    transition: .25s;
 }
 
 .uk::after {
@@ -63,7 +68,6 @@ body {
     height: 10px;
     display: inline-block;
     opacity: .5;
-    transition: .25s;
 }
 
 .dropdown {
@@ -219,14 +223,15 @@ body {
 .results-block {
     display: flex;
     max-width: 170px;
-    
+    transition: .3s;
     border: 1px solid rgb(184, 184, 184, .2);
     border-radius: 8px;
+    overflow: hidden;
 }
 
 .results-block:hover {
     cursor: pointer;
-    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    border: 1px solid #fa5311;
 }
 
 .result-info {
