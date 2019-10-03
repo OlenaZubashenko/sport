@@ -14,11 +14,3 @@ $('.single-item').slick({
     slidesToScroll: 1
 });
 
-// $('#slick-slider').on('afterChange', function(event, slick, currentSlide){
-//     $('.btn-wrapper').each((i,e)=>{
-//         e.removeClass('_slider-selected')
-//     });
-//     $('.btn-wrapper')[currentSlide].addClass('_slider-selected')
-
-//     if (currentSlide == 5) { console.log('Осуществлён переход к 5му слайду'); }
-//   });
