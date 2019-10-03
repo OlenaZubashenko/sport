@@ -50,6 +50,45 @@ body {
     letter-spacing: 1px;
 }
 
+.nav-link:hover {
+    color: #f87007;
+    transition: .3s;
+}
+
+.uk::after {
+    content: '';
+    background: url(./img/chevron-down.png) no-repeat;
+    background-size: cover;
+    width: 15px;
+    height: 10px;
+    display: inline-block;
+    opacity: .5;
+    transition: .25s;
+}
+
+.dropdown {
+    display: none;
+    padding: 10px;
+    background: #fcfbfb;
+    border-radius: 7px;
+    position: relative;
+    z-index: 3;
+}
+
+.dropdown-item {
+    list-style: none;
+    position: relative;
+}
+
+.dropdown-item a {
+    color: #202020;
+    text-decoration: none;
+}
+
+.dropdown-item a:hover {
+    color: #717274;
+}
+
 .btn-all {
     cursor: pointer;
     display: block;
@@ -133,6 +172,12 @@ body {
     padding: 5px;
 }
 
+.crumbs-item a:hover {
+    color: #fa5311;
+    opacity: 0.6;
+    transition: .3s;
+}
+
 .crumbs-arrow {
     display: inline-block;
     background: url(./img/arrow-under-nav.png) no-repeat;
@@ -177,6 +222,11 @@ body {
     
     border: 1px solid rgb(184, 184, 184, .2);
     border-radius: 8px;
+}
+
+.results-block:hover {
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
 
 .result-info {
@@ -263,6 +313,10 @@ h1, h2, h3 {
     color: #ffffff;
 }
 
+.content-left {
+    width: 75%;
+}
+
 ._slider {
     background: #000000 url(./img/slider.jpg) no-repeat;
     background-size: cover;
@@ -320,6 +374,11 @@ h1, h2, h3 {
     padding: 10px 30px;
 }
 
+._slider-title:hover {
+    cursor: pointer;
+    opacity: .7;
+}
+
 ._slider-news {
     font-size: 16px;  
     font-weight: 500;
@@ -365,8 +424,7 @@ h1, h2, h3 {
     position: absolute;
     top: 0;
     left: 0;
-       
-        content: ' ';
+    content: ' ';
         
 }
 
@@ -390,6 +448,7 @@ h1, h2, h3 {
     border-radius: 10px;
     padding: 15px;
 }
+
 .football-img-mobile {
     display: none;
 }
@@ -422,6 +481,11 @@ h1, h2, h3 {
     padding: 8px 0;
 }
 
+.reviev-title:hover {
+    cursor: pointer;
+    color: #4d4e50;
+}
+
 .reviev-title span {
     font-size: 13px;
     color: #b4b5c2;
@@ -434,6 +498,12 @@ h1, h2, h3 {
 
 .img-wrapper {
     margin: 0;
+}
+
+.img-wrapper:hover {
+    cursor: pointer;
+    transform: scale(1.01);
+    transition: .3s;
 }
 
 .reviev-date-middle {
@@ -531,6 +601,12 @@ h1, h2, h3 {
     padding-left: 10px;
 }
 
+.news-img-discription:hover {
+    cursor: pointer;
+    opacity: .7;
+    transition: .3s;
+}
+
 .message-count {
     font-size: 11px;
     color: #b4b5c2;
@@ -551,6 +627,12 @@ h1, h2, h3 {
     font-size: 14px;
     padding: 10px 0;
     font-weight: 400;
+}
+
+.news-discription:hover {
+    cursor: pointer;
+    opacity: .7;
+    transition: .3s;
 }
 
 .border-none {
@@ -592,6 +674,11 @@ h1, h2, h3 {
     font-size: 13px;
     text-decoration: none;
     padding-right: 10px;
+}
+
+.footer-item a:hover {
+    color: #fa5311;
+    transition: .3s;
 }
 
 ul {
@@ -708,8 +795,12 @@ ul {
   }
   .content-right {
     margin: 0px auto;
-    max-width: 600px;
+    max-width: 700px;
   }
+  .content-left {
+    width: 100%;
+    outline: none;
+}
   .news-img-wrapper {
     background-size: cover;
     padding-top: 200px;
@@ -722,15 +813,13 @@ ul {
   }
   .world-uk {
       padding-bottom: 20px;
-      margin: 0 auto;
+    
   }
   .world-all {
       padding-bottom: 20px;
-      margin: 0 auto;
   }
-  .world-different {
-    margin: 0 auto;
-  }
+  
+  
 }
 
 @media (max-width: 730px) {
