@@ -449,9 +449,14 @@ h1, h2, h3 {
 .reviev-block {
     display: flex;
     background: #fcfcfc;
-    border: 1px solid #edebeb;;
+    border: 1px solid #edebeb;
     border-radius: 10px;
     padding: 15px;
+    transition: .3s;
+}
+
+.reviev-block:hover {
+    border: 1px solid #fa5311; 
 }
 
 .football-img-mobile {
@@ -632,12 +637,12 @@ h1, h2, h3 {
     font-size: 14px;
     padding: 10px 0;
     font-weight: 400;
+    transition: .3s;
 }
 
 .news-discription:hover {
     cursor: pointer;
-    opacity: .7;
-    transition: .3s;
+    color: #fa5311;
 }
 
 .border-none {
@@ -747,6 +752,11 @@ ul {
     padding: 10px 20px;
     border-bottom: 1px solid #4e5154;
     border-top: 1px solid #4e5154;
+}
+
+.social {
+    display: flex;
+    align-items: center;
 }
 
 .social-icon {
