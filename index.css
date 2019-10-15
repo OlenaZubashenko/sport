@@ -25,6 +25,8 @@ body {
     justify-content: space-between;
     background-color: #000000;
     color: #ffffff;
+    position: relative;
+    z-index: 5;
 }
 
 .header-logo {
@@ -33,11 +35,14 @@ body {
 
 .nav-list {
     display: flex;
+   
 }
 
 .nav-item {
     list-style: none;
     padding: 5px;
+    transition: .25s;
+    position: relative;
 }
 
 .nav-link {
@@ -48,7 +53,7 @@ body {
     font-weight: 500;
     text-decoration: none;
     letter-spacing: 1px;
-    transition: .3s;
+    transition: all .3s ease;
 }
 
 .nav-link:hover {
@@ -56,11 +61,9 @@ body {
     
 }
 
-.uk {
-    transition: .25s;
-}
 
-.uk::after {
+#uk::before {
+    cursor: pointer;
     content: '';
     background: url(./img/chevron-down.png) no-repeat;
     background-size: cover;
@@ -70,13 +73,35 @@ body {
     opacity: .5;
 }
 
+#countries::before {
+    cursor: pointer;
+    content: '';
+    background: url(./img/chevron-down.png) no-repeat;
+    background-size: cover;
+    width: 15px;
+    height: 10px;
+    display: inline-block;
+    opacity: .5;
+}
+
+
 .dropdown {
     display: none;
     padding: 10px;
-    background: #fcfbfb;
     border-radius: 7px;
-    position: relative;
-    z-index: 3;
+    position: absolute;
+    background: #070606;
+    width: 75%;
+    z-index: 2;
+}
+
+
+#dropdown.active {
+    display: block;
+}
+
+#dropdown-countries.active {
+    display: block;
 }
 
 .dropdown-item {
@@ -85,12 +110,16 @@ body {
 }
 
 .dropdown-item a {
-    color: #202020;
+    color: #fff;;
     text-decoration: none;
 }
 
 .dropdown-item a:hover {
     color: #717274;
+}
+
+#dropdown-countries {
+
 }
 
 .btn-all {
@@ -833,7 +862,6 @@ ul {
   .world-all {
       padding-bottom: 20px;
   }
-  
   
 }
 

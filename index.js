@@ -7,12 +7,7 @@ search.onclick = function() {
     searchShow.style.background = '#ffffff';  
 }
 
-let dropdown = document.getElementById('dropdown');
 
-function toggle(dropdown) {
-    dropdown.style.display = (dropdown.style.display == 'none') ? '' : 'none'
-  }
-  
 
 $('.single-item').slick({
     infinite: true,
@@ -21,3 +16,23 @@ $('.single-item').slick({
     slidesToScroll: 1
 });
 
+$('.multiple-items').slick({
+    infinite: true,
+    dots: true,
+    slidesToShow: 6,
+    slidesToScroll: 1
+  });
+
+
+ document.getElementById('uk').addEventListener('click', openMenu);
+ document.getElementById('countries').addEventListener('click', openMenuCountries);
+
+  function openMenu() {
+      document.getElementById('dropdown').classList.toggle('active');
+  };
+
+  function openMenuCountries() {
+      document.getElementById('dropdown-countries').classList.toggle('active');
+  }
+  
+ 
